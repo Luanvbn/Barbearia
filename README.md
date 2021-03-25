@@ -6,10 +6,10 @@
 <h2>Qual o intuito desse projeto?</h2>
 <h3>O projeto está sendo realizado para uma atividade de faculdade, com o intuito de criar um sistema de barbearia.</h3>
 
-* Criação do banco de dados:
-* Criação das classes:
-* Criação da WebPage:
-* Diagrama UML:
-* Documentação: 
+* Criação do banco de dados: ✅❌
+* Criação das classes:❌
+* Criação da WebPage:❌
+* Diagrama UML:❌
+* Documentação: ❌
 
 
