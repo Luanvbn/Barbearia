@@ -1,0 +1,6 @@
+br\com\barbeariadotadeu\springbootcommysql\repository\PessoaRepository.class
+br\com\barbeariadotadeu\springbootcommysql\controller\dto\PessoaDTO.class
+br\com\barbeariadotadeu\springbootcommysql\controller\PessoaController.class
+br\com\barbeariadotadeu\springbootcommysql\controller\dto\PessoaRQ.class
+br\com\barbeariadotadeu\springbootcommysql\SpringbootComMysqlApplication.class
+br\com\barbeariadotadeu\springbootcommysql\model\Pessoa.class
