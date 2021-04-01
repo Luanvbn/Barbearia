@@ -13,4 +13,6 @@ O projeto está sendo realizado para uma atividade de faculdade, com o intuito d
 * Diagrama UML:❌
 * Documentação: ❌
 
+<h2>P.S Tabela do DB não é feito com JPA</h2>
+
 
