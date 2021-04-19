@@ -15,6 +15,11 @@ public class PessoaController {
 
     private final PessoaRepository pessoaRepository;
 
+    @GetMapping
+    public String getbook(){
+        return "API Test";
+    }
+
     public PessoaController(PessoaRepository pessoaRepository){
         this.pessoaRepository =pessoaRepository;
     }

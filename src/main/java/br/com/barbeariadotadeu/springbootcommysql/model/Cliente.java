@@ -18,6 +18,7 @@ public class Cliente{
     @JoinColumn(name = "idPessoa", nullable = false,unique = true)
     private Pessoa pessoa;
 
+
     public int getId() {
         return id;
     }
@@ -32,6 +33,7 @@ public class Cliente{
 
     public void setHoraMarcada(String horaMarcada) {
         this.horaMarcada = horaMarcada;
+
     }
 
     public Pessoa getPessoa() {
