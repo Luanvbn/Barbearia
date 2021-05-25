@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/cliente")
+@RequestMapping("/clientes")
 public class ClienteController {
 
     private final ClienteRepository clienteRepository;
@@ -34,6 +34,8 @@ public class ClienteController {
     @PostMapping("/")
     public void POST (@RequestBody ClienteRQ cliente){
         var c = new Cliente();
+        c.setLogin(cliente.getLogin());
+        c.setPassword(cliente.getPassword());
         c.setHoraMarcada(cliente.getHoraMarcada());
         c.setPessoa(cliente.getPessoa());
         clienteRepository.save(c);
@@ -45,6 +47,8 @@ public class ClienteController {
 
         if (c.isPresent()){
             var clienteSave = c.get();
+            clienteSave.setLogin(cliente.getLogin());
+            clienteSave.setPassword(cliente.getPassword());
             clienteSave.setHoraMarcada(cliente.getHoraMarcada());
             clienteSave.setPessoa(cliente.getPessoa());
             clienteRepository.save(clienteSave);
