@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/funcionario")
+@RequestMapping("/funcionarios")
 public class FuncionarioController {
     private final FuncionarioRepository funcionarioRepository;
 
@@ -35,6 +35,8 @@ public class FuncionarioController {
     @PostMapping("/")
     public void POST (@RequestBody FuncionarioRQ funcionario){
         var f = new Funcionario();
+        f.setLogin(funcionario.getLogin());
+        f.setPassword(funcionario.getPassword());
         f.setTempoExp(funcionario.getTempoExp());
         f.setPessoa(funcionario.getPessoa());
         funcionarioRepository.save(f);
@@ -46,6 +48,8 @@ public class FuncionarioController {
 
         if(f.isPresent()){
             var funSave = f.get();
+            funSave.setLogin(funcionario.getLogin());
+            funSave.setPassword(funcionario.getPassword());
             funSave.setTempoExp(funcionario.getTempoExp());
             funSave.setPessoa(funcionario.getPessoa());
             funcionarioRepository.save(funSave);

@@ -15,14 +15,15 @@ public class PessoaController {
 
     private final PessoaRepository pessoaRepository;
 
-    @GetMapping
+    @GetMapping("/teste")
     public String getbook(){
-        return "API Test";
+        return "SAPORRA FUNCIONOU!";
     }
 
     public PessoaController(PessoaRepository pessoaRepository){
         this.pessoaRepository =pessoaRepository;
     }
+
     @GetMapping("/")
     public List<PessoaDTO> findAll(){
         var pessoas = pessoaRepository.findAll();

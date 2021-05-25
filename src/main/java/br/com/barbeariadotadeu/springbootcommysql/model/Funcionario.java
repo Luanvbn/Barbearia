@@ -9,6 +9,12 @@ public class Funcionario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "login", nullable = false, unique = true)
+    private String login;
+
+    @Column(name = "password", nullable = false, unique = true)
+    private String password;
+
     @Column(name = "tempoExp", nullable = false, unique = true)
     private int tempoExp;
 
@@ -16,6 +22,22 @@ public class Funcionario {
     @JoinColumn(name = "idPessoa", nullable = false, unique = true)
     private Pessoa pessoa;
 
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public int getId() {
         return id;

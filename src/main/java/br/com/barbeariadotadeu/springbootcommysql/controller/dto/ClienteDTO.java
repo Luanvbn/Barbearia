@@ -6,6 +6,8 @@ import br.com.barbeariadotadeu.springbootcommysql.model.Pessoa;
 public class ClienteDTO {
 
     private int id;
+    private String login;
+    private String password;
     private String horaMarcada;
     private Pessoa pessoa;
 
@@ -13,10 +15,28 @@ public class ClienteDTO {
     public static ClienteDTO converter(Cliente c){
         var cliente = new ClienteDTO();
         cliente.setId(c.getId());
+        cliente.setLogin(c.getLogin());
+        cliente.setPassword(c.getPassword());
         cliente.setHoraMarcada(c.getHoraMarcada());
         cliente.setPessoa(c.getPessoa());
         return cliente;
 
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public int getId() {
