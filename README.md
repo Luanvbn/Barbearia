@@ -13,6 +13,7 @@ O projeto está sendo realizado para uma atividade de faculdade, com o intuito d
 * Diagrama UML:❌
 * Documentação: ❌
 
-<h2>P.S Tabela do DB não é feito com JPA</h2>
+Back-end feito por Luanvbn
+<h2>Tabela feita ao rodar o projeto</h2>
 
 
